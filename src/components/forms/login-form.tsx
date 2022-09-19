@@ -1,7 +1,7 @@
 import { FC } from 'react';
-import { DefaultButton } from '../../../ui-kit/buttons/buttons';
-import { FormTextInput } from '../../../ui-kit/inputs/inputs';
-import { Form } from './login-form-styles';
+import { DefaultButton } from '../../ui-kit/buttons/buttons';
+import { FormTextInput } from '../../ui-kit/inputs/inputs';
+import { Form } from './form-styles';
 
 const LoginForm: FC = () => {
   return (
