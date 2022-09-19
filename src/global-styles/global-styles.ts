@@ -12,6 +12,5 @@ export default createGlobalStyle`
   body {
     height: 100%;
     background-color: #FCEFE3;
-    position: relative;
   }
 `

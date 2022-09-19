@@ -9,8 +9,8 @@ const ActionPage: FC = () => {
   return (
     <DefaultLayout>
       <Header></Header>
-      <Logo src={logoImg}/>
-      <DefaultLink to='/login' margintop='107'>Войти</DefaultLink>
+      <Logo marginbottom={107} src={logoImg}/>
+      <DefaultLink to='/login'>Войти</DefaultLink>
       <DefaultLink to='/auth' margintop='50'>Зарегистрироваться</DefaultLink>
     </DefaultLayout>
   )
