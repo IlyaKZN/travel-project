@@ -3,6 +3,8 @@ import { TFontProperties } from "../types/style.types";
 export interface ITheme {
   colors: {
     primary: string;
+    inputBackground: string;
+    inputText: string;
   },
   gradients: {
     primary: string;
@@ -11,6 +13,9 @@ export interface ITheme {
     defaultButtons: {
       height: number;
       width: number;
+    },
+    textInputs: {
+      height: number;
     }
   },
   textBolt15: TFontProperties,

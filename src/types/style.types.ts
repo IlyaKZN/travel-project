@@ -6,6 +6,6 @@ export type TFontProperties = {
 };
 
 export type TDefaultButtonProps = {
-  marginTop?: string;
-  marginBottom?: string;
-}
+  margintop?: string;
+  marginbottom?: string;
+};

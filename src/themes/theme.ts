@@ -3,7 +3,9 @@ import { textBold10, textBold12, textBold13, textBold20, textBolt15, textRegular
 
 export const BaseTheme: ITheme = {
   colors: {
-    primary: '#FCA029'
+    primary: '#FCA029',
+    inputBackground: '#FAE5D2',
+    inputText: '#EDA47E',
   },
   gradients: {
     primary: 'linear-gradient(180deg, #FECA2F -49.19%, #FB8D27 100%)'
@@ -12,6 +14,9 @@ export const BaseTheme: ITheme = {
     defaultButtons: {
       height: 55,
       width: 227
+    },
+    textInputs: {
+      height: 39
     }
   },
   textBolt15: textBolt15,

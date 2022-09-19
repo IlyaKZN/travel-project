@@ -1,8 +1,9 @@
 import { FC } from 'react';
 import styled from 'styled-components';
 import { TDefaultButtonProps } from '../../types/style.types';
+import { Link } from 'react-router-dom';
 
-const DefaultButton = styled.button<TDefaultButtonProps>`
+const DefaultLink = styled(Link)<TDefaultButtonProps>`
   margin-top: ${({ margintop }) => margintop}px;
   height: ${({ theme }) => theme.sizes.defaultButtons.height}px;
   width: ${({ theme }) => theme.sizes.defaultButtons.width}px;
@@ -14,11 +15,14 @@ const DefaultButton = styled.button<TDefaultButtonProps>`
   line-height: ${({ theme }) => theme.textBolt15.lineHeight}px;
   font-weight: ${({ theme }) => theme.textBolt15.weight};
   color: white;
-  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 
   :focus-visible {
     outline: none;
   }
 `;
 
-export { DefaultButton };
+export { DefaultLink };
