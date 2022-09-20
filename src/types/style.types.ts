@@ -18,3 +18,14 @@ export type TAvatarImageProps = {
 export type TLogoProps = {
   marginbottom?: number;
 };
+
+export type TRadioButtonProps = {
+  name: string;
+  value: string;
+  labelName?: string;
+  checked?: boolean;
+};
+
+export type TTextAreaProps = {
+  minHeight?: number;
+};

@@ -3,7 +3,7 @@ import { IFormTextInputProps } from "../../interfaces/components";
 import { Label, TextInput } from "./inputs-style";
 
 const FormTextInput: FC<IFormTextInputProps> = ({
-  type = 'inpue',
+  type = 'text',
   labelname,
   value,
   onChange = () => {},

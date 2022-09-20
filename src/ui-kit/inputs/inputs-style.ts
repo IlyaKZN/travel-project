@@ -29,4 +29,40 @@ const TextInput = styled.input`
   }
 `;
 
-export { Label, TextInput };
+const RadioLabelContainer = styled.div`
+  margin-left: 16px;
+  height: 39px;
+  width: 34px;
+  position: relative;
+`;
+
+const RadioLabel = styled.label`
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: ${({ theme }) => theme.colors.inputBackground};
+  font-family: ${({ theme }) => theme.textRegular13.family};
+  font-size: ${({ theme }) => theme.textRegular13.size}px;
+  line-height: ${({ theme }) => theme.textRegular13.lineHeight}px;
+  font-weight: ${({ theme }) => theme.textRegular13.weight};
+  color: ${({ theme }) => theme.colors.inputText};
+`;
+
+const RadioInput = styled.input`
+  opacity: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  &:checked + ${RadioLabel} {
+    border: 2px solid ${({ theme }) => theme.colors.primary};
+  }
+`;
+
+export { Label, TextInput, RadioInput, RadioLabel, RadioLabelContainer };
