@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const DefaultLayout = styled.div`
-  padding: 44px 12px 0;
+  padding: 44px 12px 80px;
   min-width: 374px;
   display: flex;
   flex-direction: column;
